@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        #pane {
+            position:relative;
+            margin-left: 400px;
+            width:600px;
+            height:600px;
+            border:2px solid black;
+            background-color: pink;
+        }
+    
+        #box {
+            text-align: center;
+            font-size: 35px;
+            position:absolute;
+            width:100px; 
+            height:100px;          
+            background-color:rgb(121, 57, 206);
+        }
+        #box2 {
+            text-align: center;
+            font-size: 35px;
+            position: relative;
+            width:100px; 
+            height:100px;         
+            background-color:rgb(32, 218, 125);
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="pane">
+        <div id="box" onclick="activeA()">Box A</div>
+        <div id="box2" onclick="activeB()">Box B</div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="master.js"></script>
+</html>
